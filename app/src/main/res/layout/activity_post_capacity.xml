@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".PostCapacity">
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:gravity="center"
+        android:layout_width="364dp"
+        android:layout_height="511dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp">
+        <RadioButton
+            android:id="@+id/radioButton0"
+            android:layout_width="307dp"
+            android:layout_height="68dp"
+            android:fontFamily="serif-monospace"
+            android:text="0%(Almost Empty)"
+            android:textSize="20sp" />
+        <RadioButton
+            android:id="@+id/radioButton25"
+            android:layout_width="307dp"
+            android:layout_height="68dp"
+            android:layout_alignStart="@+id/radio_group"
+            android:fontFamily="serif-monospace"
+            android:text="25%"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton50"
+            android:layout_width="307dp"
+            android:layout_height="68dp"
+            android:checked="true"
+            android:fontFamily="serif-monospace"
+            android:text="50%"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton75"
+            android:layout_width="307dp"
+            android:layout_height="68dp"
+            android:fontFamily="serif-monospace"
+            android:text="75%"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton100"
+            android:layout_width="307dp"
+            android:layout_height="68dp"
+            android:fontFamily="serif-monospace"
+            android:text="100%(No Empty Seat)"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton120"
+            android:layout_width="307dp"
+            android:layout_height="68dp"
+            android:fontFamily="serif-monospace"
+            android:text="120%(People Standing)"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/post_button"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_group"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="130dp"
+        android:text="Post"/>
+</RelativeLayout>
